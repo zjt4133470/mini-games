@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clear {
+    zoom: 1;
+}
+
+body {
+    color: #333;
+    height: 100%;
+    font: normal 14px/200% arial, helvetica, "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", sans-serif;
+    text-align: left;
+    background-color: #0fce1b;
+}
+p, ul {
+    margin: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/*去除input默认样式*/
+input[type="button"], input[type="submit"], input[type="reset"], textarea, input, button, select {
+    -webkit-appearance: none;
+    border: 0;
+    outline: none;
+}
+div{
+    box-sizing: border-box;
+}
+#M{
+    width: 100%;
+    height: 100%;
+}
+.cont{
+    width:1000px;
+    height: 500px;
+    margin: 50px auto;
+    border-radius: 10px;
+    border: 3px solid;
+    background-color: #ffffff;
+    box-shadow: 4px 10px 4px;
+}
+.swiper-wrapper .swiper-slide{
+    width:1000px;
+    height: 500px;
+}
