@@ -1,9 +1,97 @@
 // 轮播图
 var mySwiper = new Swiper ('.swiper-container', {
   loop: true, // 循环模式选项
+  effect : 'cube',
+  cubeEffect: {
+    slideShadows: true,
+    shadow: true,
+    shadowOffset: 100,
+    shadowScale: 0.6
+  },
   // 如果需要前进后退按钮
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  simulateTouch : false,//禁止鼠标模拟
 });
+//开始
+$(".cont_start_img").on('click',function () {
+    $(".cont_start").remove()
+});
+$(".star").one('click',function () {
+   $$.prompt('挑战已经开始',false,3000);
+});
+//倒计时
+var time = 30;
+function countdownTime() {
+  if(time == 31){
+    return;
+  }
+  var test1;
+  if (time >= 1) {
+    time -= 1;
+    $('.times').html(time);
+    if (time == 0) {
+        time = 31;
+      $$.confirm("时间到，您失败了",function () {
+        time = 30;
+        countdownTime();
+        $('.timeNumber').html(100);
+      },function () {
+        $$.prompt('Game Over',false,2000);
+        setTimeout(function () {
+          window.location.reload();
+        },2000)
+      },"重来","结束");
+      return;
+    }
+    //点击后按钮变化
+    test1 = setTimeout(function () {
+      countdownTime();
+      clearTimeout(test1);
+    }, 1000);
+  }
+}
+//点击绿色按钮(一次)
+$(".green").one('click',function () {
+  countdownTime();
+});
+$(".cont_cont1 button").on('click',function () {
+  var dataType = $(this).attr('data-type');
+  if(dataType=='2'){
+    time =31;
+    $$.confirm("很遗憾，您失败了",function () {
+      time = 30;
+      countdownTime();
+      $('.timeNumber').html(100);
+    },function () {
+      $$.prompt('Game Over',false,2000);
+      setTimeout(function () {
+        window.location.reload();
+      },2000)
+    },"重来","结束");
+  }
+});
+$('.green').on("click",function () {
+    var degree = $('.timeNumber').html();
+    degree--;
+    $('.timeNumber').html(degree);
+    if(degree == 7){
+
+    }else if (degree == 0){
+       time = 31;
+      $$.confirm("恭喜你，挑战成功",function () {
+          $('.swiper-button-next').css("display","block");
+      },function () {
+        $$.prompt('Close the Game',false,2000);
+          setTimeout(function () {
+            window.location.reload();
+          },2000)
+      },"解锁下一关按钮","关闭");
+    }else if(degree<0){
+        degree=0;
+        $('.timeNumber').html(degree);
+    }
+});
+
