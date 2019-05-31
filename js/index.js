@@ -65,6 +65,8 @@ $(".cont_cont1 button").on('click',function () {
       time = 30;
       countdownTime();
       $('.timeNumber').html(100);
+      $('.green').css('left',"300px");
+      $('.orgin').css('left',"540px");
     },function () {
       $$.prompt('Game Over',false,2000);
       setTimeout(function () {
@@ -78,11 +80,30 @@ $('.green').on("click",function () {
     degree--;
     $('.timeNumber').html(degree);
     if(degree == 7){
-
-    }else if (degree == 0){
+        $('.green').css('left',"540px");
+        $('.orgin').css('left',"300px");
+    }else if(degree == 6){
+      $('.green').css('left',"300px");
+      $('.orgin').css('left',"540px");
+    }else if(degree == 50){
+      $('.green').css('left',"540px");
+      $('.orgin').css('left',"300px");
+    }else if(degree == 40){
+      $('.green').css('left',"300px");
+      $('.orgin').css('left',"540px");
+    }else if(degree == 85){
+      $('.green').css('left',"540px");
+      $('.orgin').css('left',"300px");
+    }else if(degree == 83){
+      $('.green').css('left',"300px");
+      $('.orgin').css('left',"540px");
+    }else if(degree == 2){
+      $('.green').css('left',"540px");
+      $('.orgin').css('left',"300px");
+    }else if(degree == 0){
        time = 31;
       $$.confirm("恭喜你，挑战成功",function () {
-          $('.swiper-button-next').css("display","block");
+          $('.swiper-button-next').show(500);
       },function () {
         $$.prompt('Close the Game',false,2000);
           setTimeout(function () {
@@ -93,5 +114,9 @@ $('.green').on("click",function () {
         degree=0;
         $('.timeNumber').html(degree);
     }
+});
+//解锁后下一关按钮隐藏
+$('.swiper-button-next').on('click',function () {
+    $('.swiper-button-next').hide(500);
 });
 

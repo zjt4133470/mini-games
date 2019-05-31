@@ -174,26 +174,35 @@ i{
     color: #d60000;
 }
 .cont_cont1 button{
-    float: left;
+    position: absolute;
     width: 150px;
     height: 50px;
     border-radius: 18px;
     box-shadow: 4px 5px 4px;
     cursor: pointer;
-    margin-left: 300px;
-    margin-top: 100px;
-}
-.cont_cont1 button:last-child{
-    margin-left: 100px;
+    top: 300px;
 }
 .green{
     background-color: green;
     cursor: pointer;
+    left: 300px;
 }
-.orgin{
+.cont_cont1 .orgin{
     background-color: #994d00;
     cursor: pointer;
+    left: 540px;
 }
-.swiper-button-next{
+.swiper-container .swiper-button-next{
     display: none;
+    background-image: none;
+    background-color: #347ffe;
+    color: #ffffff;
+    font-size: 40px;
+    width: 50px;
+    height: 120px;
+    text-align: center;
+    border-radius: 5px;
+    right: 0;
+    vertical-align: middle;
+    padding-top: 20px;
 }
