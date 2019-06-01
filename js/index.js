@@ -125,3 +125,4 @@ $('.swiper-button-next').on('click',function () {
     $('.swiper-button-next').hide(500);
 });
 
+

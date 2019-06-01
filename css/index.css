@@ -99,7 +99,7 @@ div{
 }
 i{
     float: left;
-    cursor: pointer;
+    cursor: pointer !important;
 }
 .gold_p{
     position: relative;
@@ -115,8 +115,12 @@ i{
 }
 .fu_p .fu_p_span{
     position: absolute;
-    left: -70px;
+    left: -30px;
     font-size: 13px;
+    cursor: pointer;
+    display: inline-block;
+    width: 30px;
+    height: 25px;
 }
 .fu_p{
     float: left;
