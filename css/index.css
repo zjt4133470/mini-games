@@ -61,10 +61,16 @@ div{
     height: 496px;
     border-radius: 10px;
     background-color: darkgreen;
-    position: absolute;
-    z-index: 9;
-    top: 0;
 }
+/*.cont_start{*/
+/*    width: 100%;*/
+/*    height: 496px;*/
+/*    border-radius: 10px;*/
+/*    background-color: darkgreen;*/
+/*    position: absolute;*/
+/*    z-index: 9;*/
+/*    top: 0;*/
+/*}*/
 .cont_star_outer{
     width: 100%;
 }
@@ -93,6 +99,7 @@ div{
 }
 i{
     float: left;
+    cursor: pointer;
 }
 .gold_p{
     position: relative;
@@ -129,6 +136,18 @@ i{
     font-size: 18px;
     line-height: 30px;
     text-align: right;
+}
+.userHeard .pass{
+    float: right;
+    margin-right: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.userHeard h2{
+    float: left;
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 200px;
 }
 .gold{
     width: 65px;
@@ -205,4 +224,13 @@ i{
     right: 0;
     vertical-align: middle;
     padding-top: 20px;
+}
+.pass_i1{
+    cursor: pointer;
+}
+.customsPass{
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
 }

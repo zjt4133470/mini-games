@@ -32,7 +32,7 @@
     * */
     var set = "";
     clearTimeout(set);
-    var div = $("<div class ='mim-prompt_out'></div>").animate({top: "50px", opacity: '1'}, 500).appendTo($("body"));
+    var div = $("<div class ='mim-prompt_out'></div>").animate({top: "0px", opacity: '1'}, 500).appendTo($("body"));
     if (bool == true || bool == "true") {
       var div_box = $("<div class='mim-prompt_div_box'></div>").appendTo(div);
       var div_p = $("<p class='mim-prompt_div_p'>" + state + "</p>").appendTo(div_box);

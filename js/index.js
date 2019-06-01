@@ -1,13 +1,7 @@
 // 轮播图
 var mySwiper = new Swiper ('.swiper-container', {
-  loop: true, // 循环模式选项
-  effect : 'cube',
-  cubeEffect: {
-    slideShadows: true,
-    shadow: true,
-    shadowOffset: 100,
-    shadowScale: 0.6
-  },
+  loop: false, // 循环模式选项
+  effect : 'fade',
   // 如果需要前进后退按钮
   navigation: {
     nextEl: '.swiper-button-next',
@@ -15,12 +9,14 @@ var mySwiper = new Swiper ('.swiper-container', {
   },
   simulateTouch : false,//禁止鼠标模拟
 });
+// mySwiper.slideTo(1);
+
 //开始
 $(".cont_start_img").on('click',function () {
-    $(".cont_start").remove()
+    mySwiper.slideTo(1);
 });
 $(".star").one('click',function () {
-   $$.prompt('挑战已经开始',false,3000);
+   $$.prompt('你以为我会那么简单的开始吗？',false,2000);
 });
 //倒计时
 var time = 30;
@@ -60,7 +56,7 @@ $(".green").one('click',function () {
 $(".cont_cont1 button").on('click',function () {
   var dataType = $(this).attr('data-type');
   if(dataType=='2'){
-    time =31;
+    time = 31;
     $$.confirm("很遗憾，您失败了",function () {
       time = 30;
       countdownTime();
@@ -114,6 +110,15 @@ $('.green').on("click",function () {
         degree=0;
         $('.timeNumber').html(degree);
     }
+});
+//第一页刷新
+$(".pass_i1").on("click",function () {
+    time = 30;
+    if(time <0 ){
+      countdownTime();
+    }
+    $('.timeNumber').html(100);
+    mySwiper.slideTo(1);
 });
 //解锁后下一关按钮隐藏
 $('.swiper-button-next').on('click',function () {
