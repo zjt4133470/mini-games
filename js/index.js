@@ -9,7 +9,8 @@ var mySwiper = new Swiper ('.swiper-container', {
   },
   simulateTouch : false,//禁止鼠标模拟
 });
-// mySwiper.slideTo(1);
+//定位页面
+// mySwiper.slideTo(2);
 
 //开始
 $(".cont_start_img").on('click',function () {
@@ -104,7 +105,7 @@ $('.green').on("click",function () {
         $$.prompt('Close the Game',false,2000);
           setTimeout(function () {
             window.location.reload();
-          },2000)
+          },1000)
       },"解锁下一关按钮","关闭");
     }else if(degree<0){
         degree=0;
@@ -124,5 +125,36 @@ $(".pass_i1").on("click",function () {
 $('.swiper-button-next').on('click',function () {
     $('.swiper-button-next').hide(500);
 });
+//第二页点我
+var number = 0;
+$('.clickMe').click(function () {
+    number++;
+    if(number == 1){
+      $$.prompt('点我没用啊',false,2000);
+    }else if(number == 2){
+      $$.prompt('点我真没用啊',false,2000);
+    }else if(number == 3){
+      $$.prompt('别点了真没用',false,2000);
+    }else if(number == 4){
+      $$.prompt('。。。。。。',false,2000);
+    }
+});
+//第二页刷新
+$(".pass_i2").on("click",function () {
+  number = 0;
+  mySwiper.slideTo(2);
+});
+//第二页过关
+$(".menu").click(function () {
+  $$.confirm("恭喜你，挑战成功",function () {
+    $('.swiper-button-next').show(500);
+  },function () {
+    $$.prompt('Close the Game',false,2000);
+    setTimeout(function () {
+      window.location.reload();
+    },1000)
+  },"解锁下一关按钮","关闭")
+});
+
 
 
