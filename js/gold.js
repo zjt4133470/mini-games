@@ -28,11 +28,21 @@ $(function () {
         }, function () {
         }, "ok", "close");
       }
-
     }
     localStorage.setItem("gold", gold_out);
     $('.gold').html(gold_out);
   });
 //  跳过
+  $('.swiper-slide .skip').on('click', function () {
+    gold_out = parseInt(gold_out) - 100;
+    if (gold_out < 0) {
+      gold_out = 0;
+      $$.prompt('您的金币不足，请先获取金币', false, 2000);
+    } else {
+      successful();
+    }
+    localStorage.setItem("gold", gold_out);
+    $('.gold').html(gold_out);
+  });
 
 });
