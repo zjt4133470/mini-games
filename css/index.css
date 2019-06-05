@@ -167,6 +167,7 @@ i{
     background-color: #ffa64d;
     width: 100%;
     height:444px;
+    border-radius: 10px;
 }
 .cont_cont1 h1{
     float: right;
@@ -192,6 +193,7 @@ i{
     background-color: #ffa64d;
     width: 100%;
     height:444px;
+    border-radius: 10px;
 }
 .timeNumber{
     color: #d60000;
@@ -260,4 +262,76 @@ i{
     line-height: 50px;
     font-weight: bolder;
     cursor: pointer;
+}
+/*第三关样式*/
+.cont_cont3{
+    background: #66cc00;
+    width: 100%;
+    height:444px;
+    border-radius: 10px;
+}
+.cont_cont3 h2{
+    cursor: default;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 30px;
+}
+.cont_cont3 h2 span{
+    font-size: 35px;
+    color: #d60000;
+}
+.cont_cont3 table{
+    margin-top: 10px;
+    margin-left: 270px;
+    height: 100px;
+    text-align: center;
+    border-collapse: collapse;
+}
+.cont_cont3 table td{
+    cursor: pointer;
+    width:60px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid;
+    text-align: center;
+    display: inline-block;
+    margin: 15px;
+    border-radius:5px;
+    font-size: 20px;
+    box-shadow: 4px 5px 4px;
+    background: #ffa64d;
+}
+.cont_cont3 input{
+    margin-left: 250px;
+    width: 500px;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid #eee;
+    text-indent:10px;
+    font-size: 20px;
+    box-shadow: 4px 5px 4px;
+}
+.cont_cont3 button{
+    width: 80px;
+    height: 30px;
+    border-radius: 18px;
+    box-shadow: 4px 5px 4px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    float: left;
+    margin-left: 350px;
+    margin-top: 35px;
+    background: #f0f9eb;
+}
+
+/*第四页*/
+.cont_cont4{
+    background: #ffffff;
+    width: 100%;
+    height:444px;
+    border-radius: 10px;
 }

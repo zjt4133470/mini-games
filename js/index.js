@@ -9,9 +9,19 @@ var mySwiper = new Swiper ('.swiper-container', {
   },
   simulateTouch : false,//禁止鼠标模拟
 });
+//挑战成功
+function successful(){
+    $$.confirm("恭喜你，挑战成功",function () {
+        $('.swiper-button-next').show(500);
+    },function () {
+        $$.prompt('Close the Game',false,2000);
+        setTimeout(function () {
+            window.location.reload();
+        },1000)
+    },"解锁下一关按钮","关闭");
+}
 //定位页面
-// mySwiper.slideTo(2);
-
+mySwiper.slideTo(0);
 //开始
 $(".cont_start_img").on('click',function () {
     mySwiper.slideTo(1);
@@ -99,14 +109,7 @@ $('.green').on("click",function () {
       $('.orgin').css('left',"300px");
     }else if(degree == 0){
        time = 31;
-      $$.confirm("恭喜你，挑战成功",function () {
-          $('.swiper-button-next').show(500);
-      },function () {
-        $$.prompt('Close the Game',false,2000);
-          setTimeout(function () {
-            window.location.reload();
-          },1000)
-      },"解锁下一关按钮","关闭");
+       successful()
     }else if(degree<0){
         degree=0;
         $('.timeNumber').html(degree);
@@ -146,15 +149,47 @@ $(".pass_i2").on("click",function () {
 });
 //第二页过关
 $(".menu").click(function () {
-  $$.confirm("恭喜你，挑战成功",function () {
-    $('.swiper-button-next').show(500);
-  },function () {
-    $$.prompt('Close the Game',false,2000);
-    setTimeout(function () {
-      window.location.reload();
-    },1000)
-  },"解锁下一关按钮","关闭")
+    successful()
 });
+//第三页刷新
+$(".pass_i3").on("click",function () {
+    mySwiper.slideTo(3);
+    $('.passInput').val('');
+});
+//点击改变input内容
+var str = "";
+$(".cont_cont3 table td").on('click',function () {
+    var str1 = $(this).html();
+    str = str + str1;
+    $('.passInput').val(str);
+});
+//过关
+$('.reachPass').on('click',function () {
+    var inputStr = $('.passInput').val();
+    if(inputStr == ""){
+        $$.prompt('没有输入密码',false,2000);
+    }else if(inputStr=="密码"){
+        successful();
+    }else {
+        $$.prompt('密码输入错误',false,2000);
+    }
+});
+//第三关帮助
+$('.help').click(function () {
+    $$.prompt('不花金币的帮助不是好帮助',false,2000);
+});
+//确定
+$('.confirm').on('click',function () {
+    var inputStr = $('.passInput').val();
+    if(inputStr == ""){
+        $$.prompt('没有输入密码',false,2000);
+    }else if(inputStr=="密码"){
+        $$.prompt('我会那么简单吗？',false,2000);
+    }else {
+        $$.prompt('密码输入错误',false,2000);
+    }
+});
+
 
 
 

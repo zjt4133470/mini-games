@@ -23,6 +23,10 @@ $(function () {
         $$.confirm("页面上有个MENU，试着点点看", function () {
         }, function () {
         }, "ok", "close");
+      }else if(hintType == 3){
+        $$.confirm("页面上有个红色的字，试着点点看", function () {
+        }, function () {
+        }, "ok", "close");
       }
 
     }
