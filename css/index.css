@@ -1,7 +1,8 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 .clear:after {
     content: ".";
     display: block;
@@ -20,6 +21,7 @@ body {
     font: normal 14px/200% arial, helvetica, "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", sans-serif;
     text-align: left;
 }
+
 p, ul {
     margin: 0px;
 }
@@ -39,15 +41,18 @@ input[type="button"], input[type="submit"], input[type="reset"], textarea, input
     border: 0;
     outline: none;
 }
-div{
+
+div {
     box-sizing: border-box;
 }
-#M{
+
+#M {
     width: 100%;
     height: 100%;
 }
-.cont{
-    width:1000px;
+
+.cont {
+    width: 1000px;
     height: 500px;
     margin: 50px auto;
     border-radius: 10px;
@@ -56,12 +61,14 @@ div{
     box-shadow: 4px 10px 4px;
     position: relative;
 }
-.cont_start{
+
+.cont_start {
     width: 100%;
     height: 496px;
     border-radius: 10px;
     background-color: darkgreen;
 }
+
 /*.cont_start{*/
 /*    width: 100%;*/
 /*    height: 496px;*/
@@ -71,11 +78,12 @@ div{
 /*    z-index: 9;*/
 /*    top: 0;*/
 /*}*/
-.cont_star_outer{
+.cont_star_outer {
     width: 100%;
 }
-.star{
-    margin:100px auto;
+
+.star {
+    margin: 100px auto;
     cursor: pointer;
     -webkit-appearance: none;
     width: 250px;
@@ -88,32 +96,37 @@ div{
     border-radius: 18px;
     box-shadow: 4px 3px 4px;
 }
-.swiper-wrapper .swiper-slide{
-    width:1000px;
+
+.swiper-wrapper .swiper-slide {
+    width: 1000px;
     height: 500px;
 }
-.userHeard{
+
+.userHeard {
     width: 100%;
     height: 50px;
     background-color: #f0f9eb;
 }
-i{
+
+i {
     float: left;
     cursor: pointer !important;
 }
-.gold_p{
+
+.gold_p {
     position: relative;
     float: left;
     width: 100px;
     height: 30px;
     border-radius: 10px;
     border: 3px solid gold;
-    border-left:none ;
+    border-left: none;
     text-align: left;
     margin-left: -30px;
     margin-top: 6px;
 }
-.fu_p .fu_p_span{
+
+.fu_p .fu_p_span {
     position: absolute;
     left: -30px;
     font-size: 13px;
@@ -122,83 +135,97 @@ i{
     width: 30px;
     height: 25px;
 }
-.fu_p{
+
+.fu_p {
     float: left;
     width: 80px;
     height: 30px;
     border-radius: 5px;
     border: 3px solid;
-    border-left:none ;
+    border-left: none;
     text-align: left;
     margin-left: -20px;
     margin-top: 6px;
     position: relative;
 }
-.fu_p span{
+
+.fu_p span {
     width: 70px;
     float: left;
     font-size: 18px;
     line-height: 30px;
     text-align: right;
 }
-.userHeard .pass{
+
+.userHeard .pass {
     float: right;
     margin-right: 10px;
     font-size: 20px;
     margin-top: 10px;
 }
-.userHeard h2{
+
+.userHeard h2 {
     float: left;
     margin-top: 10px;
     font-size: 20px;
     margin-left: 200px;
 }
-.gold{
+
+.gold {
     width: 65px;
     float: left;
     font-size: 18px;
     line-height: 30px;
     text-align: right;
 }
-.gold_img{
+
+.gold_img {
     margin-left: 5px;
 }
-.cont_cont1{
+
+.cont_cont1 {
     background-color: #ffa64d;
     width: 100%;
-    height:444px;
+    height: 444px;
     border-radius: 10px;
 }
-.cont_cont1 h1{
+
+.cont_cont1 h1 {
     float: right;
     margin-right: 80px;
     margin-top: 20px;
 }
-.place{
+
+.place {
     float: left;
     width: 1000px;
     font-size: 50px;
     margin-top: 50px;
 }
-.place p{
+
+.place p {
     width: 100%;
     text-align: center;
 }
-.cont_cont3{
+
+.cont_cont3 {
     background-color: #ffa64d;
     width: 100%;
-    height:444px;
+    height: 444px;
 }
-.cont_cont2{
+
+.cont_cont2 {
     background-color: #ffa64d;
     width: 100%;
-    height:444px;
+    height: 444px;
     border-radius: 10px;
 }
-.timeNumber{
+
+.timeNumber {
     color: #d60000;
 }
-.cont_cont1 button{
+
+.cont_cont1 button {
     position: absolute;
     width: 150px;
     height: 50px;
@@ -207,17 +234,20 @@ i{
     cursor: pointer;
     top: 300px;
 }
-.green{
+
+.green {
     background-color: green;
     cursor: pointer;
     left: 300px;
 }
-.cont_cont1 .orgin{
+
+.cont_cont1 .orgin {
     background-color: #994d00;
     cursor: pointer;
     left: 540px;
 }
-.swiper-container .swiper-button-next{
+
+.swiper-container .swiper-button-next {
     display: none;
     background-image: none;
     background-color: #347ffe;
@@ -231,23 +261,27 @@ i{
     vertical-align: middle;
     padding-top: 20px;
 }
-.pass_i1{
+
+.pass_i1 {
     cursor: pointer;
 }
-.customsPass{
+
+.customsPass {
     cursor: pointer;
     position: absolute;
     right: 10px;
     bottom: 20px;
 }
-.cont_cont2 p{
+
+.cont_cont2 p {
     position: absolute;
     right: 50px;
     top: 80px;
     color: #994d00;
     cursor: pointer;
 }
-.cont_cont2 h2{
+
+.cont_cont2 h2 {
     position: absolute;
     left: 400px;
     top: 250px;
@@ -263,45 +297,51 @@ i{
     font-weight: bolder;
     cursor: pointer;
 }
+
 /*第三关样式*/
-.cont_cont3{
+.cont_cont3 {
     background: #66cc00;
     width: 100%;
-    height:444px;
+    height: 444px;
     border-radius: 10px;
 }
-.cont_cont3 h2{
+
+.cont_cont3 h2 {
     cursor: default;
     text-align: center;
     padding-top: 50px;
     font-size: 30px;
 }
-.cont_cont3 h2 span{
+
+.cont_cont3 h2 span {
     font-size: 35px;
     color: #d60000;
 }
-.cont_cont3 table{
+
+.cont_cont3 table {
     margin-top: 10px;
     margin-left: 270px;
     height: 100px;
     text-align: center;
     border-collapse: collapse;
 }
-.cont_cont3 table td{
+
+.cont_cont3 table td {
     cursor: pointer;
-    width:60px;
+    width: 60px;
     height: 50px;
     line-height: 50px;
     border: 1px solid;
     text-align: center;
     display: inline-block;
     margin: 15px;
-    border-radius:5px;
+    border-radius: 5px;
     font-size: 20px;
     box-shadow: 4px 5px 4px;
     background: #ffa64d;
 }
-.cont_cont3 input{
+
+.cont_cont3 input {
     margin-left: 250px;
     width: 500px;
     height: 50px;
@@ -309,11 +349,12 @@ i{
     border-radius: 6px;
     outline: none;
     border: 1px solid #eee;
-    text-indent:10px;
+    text-indent: 10px;
     font-size: 20px;
     box-shadow: 4px 5px 4px;
 }
-.cont_cont3 button{
+
+.cont_cont3 button {
     width: 80px;
     height: 30px;
     border-radius: 18px;
@@ -329,9 +370,88 @@ i{
 }
 
 /*第四页*/
-.cont_cont4{
+.cont_cont4 {
     background: #ffffff;
     width: 100%;
-    height:444px;
+    height: 444px;
     border-radius: 10px;
+}
+
+/*关卡列表*/
+.pass_list {
+    display: none;
+    background-color: rgba(0, 0, 0, .8);
+    width: 100%;
+    height: 496px;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    float: left;
+}
+
+.close {
+    float: right;
+    margin: 20px;
+    color: #ffffff;
+}
+
+.pass_list ul {
+    float: left;
+    list-style: none;
+}
+
+.pass_list ul li {
+    cursor: pointer;
+    float: left;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin-left: 30px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.pass_border {
+    border: 3px solid #d60000;
+}
+
+/*阴影*/
+.faint {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    top: 0;
+}
+
+.faint p {
+    width: 100%;
+    margin-top: 10px;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    color: #d60000;
+}
+
+.faint .lock {
+    float: left;
+    margin: 35px 25px;
+}
+
+.pass_list1 {
+    background: url("../images/pass/1.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.pass_list2 {
+    background: url("../images/pass/2.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.pass_list3 {
+    background: url("../images/pass/3.png") no-repeat;
+    background-size: 100% 100%;
 }
